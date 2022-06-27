@@ -1,26 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { Avatar, IconButton, Typography } from "@mui/material";
 import PersonAddAlt1OutlinedIcon from "@mui/icons-material/PersonAddAlt1Outlined";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import styles from "./CardProfile.module.css";
+import Check from "@mui/icons-material/Check";
+import StarIcon from "@mui/icons-material/Star";
 const CardProfile = ({ title, description, image, buttonType, onClick }) => {
+  const [isClicked, setIsClicked] = useState(false);
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+    onClick();
+  };
   const ChosenButton = () => {
     switch (buttonType) {
       case "addFriend": {
         return (
           <IconButton
-            onClick={() => onClick()}
+            onClick={() => handleClick()}
             className={styles.addFriend}
             color="primary"
           >
-            <PersonAddAlt1OutlinedIcon />
+            {isClicked ? <Check /> : <PersonAddAlt1OutlinedIcon />}
           </IconButton>
         );
       }
       case "favorite": {
         return (
-          <IconButton onClick={() => onClick()}>
-            <StarBorderOutlinedIcon />
+          <IconButton onClick={() => handleClick()}>
+            {isClicked ? (
+              <StarIcon sx={{ color: "#fdd835" }} />
+            ) : (
+              <StarBorderOutlinedIcon />
+            )}
           </IconButton>
         );
       }

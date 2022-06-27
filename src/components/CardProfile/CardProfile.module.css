@@ -14,9 +14,26 @@
     align-items: flex-start;
     flex: 1;
 }
-
+.text h1{ 
+    cursor: pointer;
+}
+.text h1:hover{ 
+    text-decoration: underline;
+}
 .addFriend{ 
     background-color: var(--color-primary-button);
     color: var(--backgroundColorContainer);
+}
+
+@media(max-width: 768px ) { 
+    .root{ 
+        width: 280px;
+    }
+}
+
+@media(max-width: 1370px ) { 
+    .root{ 
+        width: 280px;
+    }
 }
 
