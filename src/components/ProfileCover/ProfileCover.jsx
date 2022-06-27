@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import React from "react";
 import styles from "./ProfileCover.module.css";
 import Nav from "../Nav/Nav";
-const ProfileCover = () => {
+const ProfileCover = ({ name, profession }) => {
   return (
     <div className={`${styles.root}`}>
       <div className="row position-relative">
@@ -33,10 +33,10 @@ const ProfileCover = () => {
               fontSize={30}
               sx={{ marginBottom: 2 }}
             >
-              Mirco Gonzalez
+              {name}
             </Typography>
             <Typography variant="h5" fontSize={15} color="common.white">
-              Full Stack Developer
+              {profession}
             </Typography>
           </div>
         </div>
