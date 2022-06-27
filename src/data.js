@@ -1,3 +1,7 @@
+/**
+ * This data should come from an API
+ */
+
 export const User = {
   id: 1,
   name: "Peter Reed",
@@ -25,6 +29,19 @@ export const PostsData = [
       "https://images.pexels.com/photos/3265546/pexels-photo-3265546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postImage:
       "https://images.pexels.com/photos/2058911/pexels-photo-2058911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    comments: [
+      {
+        name: "Susana Grosch",
+        image:
+          "https://images.pexels.com/photos/3361154/pexels-photo-3361154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        comment:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Etdolore provident ",
+        numberLikes: 60,
+      },
+    ],
+    numberLikes: 40,
+    numberShare: 300,
+    numberComment: 500,
   },
   {
     name: "Rosa Walters",
@@ -35,6 +52,19 @@ export const PostsData = [
       "https://images.pexels.com/photos/2190377/pexels-photo-2190377.jpeg?auto=compress&cs=tinysrgb&w=800",
     postImage:
       "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=800",
+    comments: [
+      {
+        name: "Gaston Scocco",
+        image:
+          "https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        comment:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Etdolore provident ",
+        numberLikes: 30,
+      },
+    ],
+    numberLikes: 50,
+    numberShare: 700,
+    numberComment: 100,
   },
   {
     name: "Charles Watson",
@@ -45,6 +75,19 @@ export const PostsData = [
       "https://images.pexels.com/photos/3361154/pexels-photo-3361154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postImage:
       "https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    comments: [
+      {
+        name: "Roxana Green",
+        image:
+          "https://images.pexels.com/photos/1164674/pexels-photo-1164674.jpeg?auto=compress&cs=tinysrgb&w=800",
+        comment:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Etdolore provident ",
+        numberLikes: 100,
+      },
+    ],
+    numberLikes: 70,
+    numberShare: 200,
+    numberComment: 300,
   },
 ];
 export const SuggestedPagesData = [
