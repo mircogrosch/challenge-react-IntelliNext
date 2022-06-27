@@ -1,0 +1,5 @@
+@import '../../themes/variables.css';
+.root{ 
+    border-radius: 10px;
+    background-color: var(--backgroundColorContainer);
+}

@@ -4,14 +4,16 @@ import styles from "./ProfileCover.module.css";
 import Nav from "../Nav/Nav";
 const ProfileCover = () => {
   return (
-    <div className={`container-fluid ${styles.root}`}>
+    <div className={`${styles.root}`}>
       <div className="row position-relative">
-        <img
-          src={require("../../assets/img/cover1.jpeg")}
-          alt="cover"
-          className={styles.coverImg}
-          style={{ padding: 0, margin: 0 }}
-        />
+        <div>
+          <img
+            src={require("../../assets/img/cover1.jpeg")}
+            alt="cover"
+            className={styles.coverImg}
+          />
+        </div>
+
         <div
           className="row justify-content-start position-absolute"
           style={{ top: 200, left: 25 }}

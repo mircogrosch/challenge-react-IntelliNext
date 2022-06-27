@@ -3,7 +3,7 @@ import ProfileCover from "../../components/ProfileCover/ProfileCover";
 
 const Header = () => {
   return (
-    <div>
+    <div className="container-fluid">
       <ProfileCover />
     </div>
   );
