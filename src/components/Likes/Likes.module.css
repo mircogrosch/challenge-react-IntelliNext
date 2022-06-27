@@ -1,0 +1,11 @@
+@import '../../themes//variables.css';
+
+.likeContainer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likeIcon{ 
+    color: var(--backgroundColorLikes);
+}

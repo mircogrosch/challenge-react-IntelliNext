@@ -1,0 +1,26 @@
+@import '../../themes//variables.css';
+.root { 
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.input { 
+    height: 130px;
+    border: solid 0.5px var(--color-primary);
+    border-radius: 10px;
+    background-color: transparent;
+}
+.input::placeholder { 
+    padding: 14px;
+    font-size: 1em;
+}
+.containerButton{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.commentButton { 
+    width: 200px;
+    height: 35px;
+}

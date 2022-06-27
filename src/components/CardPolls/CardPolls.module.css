@@ -1,0 +1,12 @@
+.selection{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatarGroup{ 
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
