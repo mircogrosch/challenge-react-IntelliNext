@@ -19,7 +19,7 @@ export const PostsData = [
   {
     name: "Leeanna Alvord",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur ab ad nobis quaerat. Labore vero beatae itaque aliquam? Vel doloribus repellendus repudiandae similique",
+      "Lorem ipsum dolor sit, asamet consectetur adipisicing elit. Unde consequuntur ab ad nobis quaerat. Labore vero beatae itaque aliquam? Vel doloribus repellendus repudiandae similique",
     date: "12 Dec 2021 at 1:16 AM",
     profileImage:
       "https://images.pexels.com/photos/3265546/pexels-photo-3265546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
