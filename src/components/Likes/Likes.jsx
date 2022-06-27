@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { IconButton, Typography } from "@mui/material";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
 import styles from "./Likes.module.css";
-const Likes = () => {
-  const [likes, setLikes] = useState(0);
+const Likes = ({ numberLikes }) => {
+  const [likes, setLikes] = useState(numberLikes ? numberLikes : 0);
   const [isClicked, setIsClicked] = useState(false);
   const handleLikes = () => {
     if (isClicked) {
-      setLikes(0);
+      setLikes(numberLikes ? numberLikes : 0);
       setIsClicked(false);
       return;
     }
