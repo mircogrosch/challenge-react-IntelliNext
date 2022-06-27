@@ -7,15 +7,13 @@
 }
 
 .input { 
-    height: 130px;
+    height: 145px;
     border: solid 0.5px var(--color-primary);
     border-radius: 10px;
     background-color: transparent;
+    padding: 20px;
 }
-.input::placeholder { 
-    padding: 14px;
-    font-size: 1em;
-}
+
 .containerButton{
     margin-top: 20px;
     margin-bottom: 25px;

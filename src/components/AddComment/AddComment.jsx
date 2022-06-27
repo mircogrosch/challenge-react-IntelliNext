@@ -3,7 +3,12 @@ import { Button } from "@mui/material";
 import styles from "./AddComment.module.css";
 const AddComment = () => {
   return (
-    <form className={styles.root}>
+    <form
+      className={styles.root}
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <textarea
         rows="5"
         cols="10"
