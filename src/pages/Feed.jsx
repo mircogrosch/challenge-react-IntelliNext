@@ -30,6 +30,10 @@ const Feed = () => {
                 name={post.name}
                 postImage={post.postImage}
                 profileImage={post.profileImage}
+                likes={post.numberLikes}
+                shares={post.numberShare}
+                comments={post.comments}
+                numberComments={post.numberComment}
               />
             );
           })}
