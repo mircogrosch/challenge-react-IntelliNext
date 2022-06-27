@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import styles from "./Nav.module.css";
 
 const Nav = () => {
-  const [isClicked, setIsClicked] = useState({});
+  const [isClicked, setIsClicked] = useState({ feed: true });
 
   const handleOnClick = (e) => {
     setIsClicked({
