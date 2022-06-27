@@ -2,8 +2,27 @@
 .header{ 
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 }
+
+ @media(min-width: 768px ) { 
+    .header{ 
+        justify-content: space-between;
+        align-items:center;
+        margin-left: 10px;
+    }
+    .comment { 
+        margin-left: 8px;
+    }
+    .avatar{ 
+        height: 70px;
+        display: flex;
+       align-items: center;
+    }
+    .likes{
+        margin-right: 20px;
+    }
+} 
 
 
