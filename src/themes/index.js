@@ -3,6 +3,13 @@ import { deepPurple, grey } from "@mui/material/colors";
 
 const themes = createTheme({
   components: {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          backgroundColor: "#7e6dee",
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
