@@ -4,12 +4,12 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import Likes from "../Likes/Likes";
 import styles from "./ActionList.module.css";
-const ActionList = () => {
+const ActionList = ({ numberLikes, numberShare, numberComment }) => {
   return (
     <div className={styles.root}>
       <div className={styles.likes}>
-        <Likes />
-        <AvatarGroup total={24} max={5}>
+        <Likes numberLikes={numberLikes} />
+        <AvatarGroup total={numberLikes} max={5} spacing={4}>
           <Avatar
             alt="Avatar"
             src={require("../../assets/img/profile.jpg")}
@@ -28,7 +28,7 @@ const ActionList = () => {
             <ChatBubbleOutlineIcon />
           </IconButton>
           <Typography variant="h6" fontSize={20} color="textPrimary">
-            {0}
+            {numberComment}
           </Typography>
         </div>
         <div className="share">
@@ -36,7 +36,7 @@ const ActionList = () => {
             <ShareOutlinedIcon />
           </IconButton>
           <Typography variant="h6" fontSize={20} color="textPrimary">
-            {0}
+            {numberShare}
           </Typography>
         </div>
       </div>
