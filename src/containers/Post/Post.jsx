@@ -14,6 +14,7 @@ const Post = ({
   likes,
   comments,
   shares,
+  numberComments,
 }) => {
   return (
     <div className={`container ${styles.root}`}>
@@ -29,11 +30,23 @@ const Post = ({
         <img src={postImage} />
       </div>
       <div className="row justify-content-center " style={{ marginBottom: 30 }}>
-        <ActionList />
+        <ActionList
+          numberLikes={likes}
+          numberShare={shares}
+          numberComment={numberComments}
+        />
       </div>
       <div className="row justify-content-center">
-        <Comment />
-        <Comment />
+        {comments.map((comment) => {
+          return (
+            <Comment
+              image={comment.image}
+              comment={comment.comment}
+              name={comment.name}
+              numberLikes={comment.numberLikes}
+            />
+          );
+        })}
       </div>
       <div className="row justify-content-center">
         <AddComment />
